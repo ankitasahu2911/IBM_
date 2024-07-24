@@ -50,7 +50,7 @@
 
   #navbar .topnav-right a:hover {
     color: white;
-    background-color: rgb(29, 117, 31);
+    background-color: #033864;
   
   }
 
@@ -63,7 +63,9 @@
     position: fixed;
     width: 100%;
     box-shadow: 0 6px 63px 0 rgb(20 20 45 / 20%);
-    height: 72px;
+    height: 82px;
+    /* margin-bottom: 20px; */
+    /* padding-bottom: 20px; */
   }
 
   #navbar::before {
@@ -111,10 +113,11 @@
     /* padding: 7px 18px; */
     /* border-radius: 59px; */
   }
-  
+ 
   #navbar ul li a:hover {
     color: rgb(254, 254, 255);
-    background-color: rgb(29, 117, 31);
+    background-color: #033864;
+    /* color: black; */
     
   }
   
@@ -132,7 +135,7 @@
 #home {
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
+    padding: 89px 200px;
     height: 500px;
     justify-content: center;
     align-items: center;
@@ -215,7 +218,7 @@
   
   .content h4 {
     font-weight: 600;
-    color:#6c721b;
+    color: #033864;
     font-size: 61px;
     margin-top: 1%;
     text-align: center;
@@ -224,7 +227,7 @@
   
   .content h3 {
     font-weight: 600;
-    color:#6c721b;
+    color: #033864;
     font-size: 61px;
     text-align: left;
     text-align: center;
