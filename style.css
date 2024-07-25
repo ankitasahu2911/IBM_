@@ -109,7 +109,7 @@
     border-radius: 25px;
     padding: 5px 12px;
     /* border: 2px solid black; */
-    /* margin: 5px 6px; */
+    margin: 0px 3px;
     /* padding: 7px 18px; */
     /* border-radius: 59px; */
   }
@@ -191,11 +191,15 @@
   }
   
   .button:hover {
-    background-color:#29721b;
-    color:white;
+    background-color: #033864;
+
+    
   }
 
- 
+  .button a:hover {
+    color:white;
+    
+  }
   
   .tool .main {
     display: flex;
@@ -239,6 +243,7 @@
     color: #080808;
     font-size: 24px;
     letter-spacing: 1px;
+    text-align: justify
   }
   
   .img img {
@@ -275,5 +280,19 @@
     padding: 25px;
   
   }
+
+  .h-primary {
+    font-size: 3.8rem;
+    margin-top: 273px;
+    margin-bottom: -6px;
+    /* font-family: 'Bree Serif', serif; */
+    letter-spacing: 2px;
+  }
+  
+  .center {
+    text-align: center;
+  
+  }
+  
 
   
