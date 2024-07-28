@@ -634,10 +634,10 @@ textarea {
   margin-top: 10px;
   margin-bottom: 10px;
   background: #b5b5ae;
-  border-radius: 10px;
+  border-radius: 0px;
   font-family: 'Bree Serif', serif;
   width: 75vw;
-
+  
 }
 
 .accordion__question {
@@ -646,31 +646,35 @@ textarea {
   align-items: center;
   padding: 20px;
   background-color: #f0f0f0;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   cursor: pointer;
+  margin: 0; 
 }
 
 .accordion__question p {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+  flex-grow: 1; 
 }
 
 .accordion__question i {
   font-size: 24px;
   margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .accordion__answer {
   padding: 20px;
   background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
 }
-
 .accordion__answer p {
   margin: 0;
   font-size: 16px;
 }
+
 .accordion:hover {
   cursor: pointer;
 }
