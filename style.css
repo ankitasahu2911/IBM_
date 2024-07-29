@@ -139,7 +139,7 @@ ul {
   left: 0px;
   width: 100%;
   z-index: -1;
-  /* opacity: 0.5; */
+  opacity: 0.6;
 }
 
 #home h1 {
@@ -148,18 +148,27 @@ ul {
 }
 
 #home p {
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: center;
   font-size: 1.5rem;
 
-    padding: 25px;
+    padding: 5px;
   
   font-weight: 400;
   letter-spacing: 1.5px;
-  transform: translateY(50px);
-  animation: slideIn 1s ease forwards;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+  opacity: 0;
+  transform: scale(0);
+    animation: appearFromCenter 2s ease forwards; 
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
-
+@keyframes appearFromCenter {
+  to {
+      opacity: 1; /* End with full opacity */
+      transform: scale(1); /* End with full size */
+  }
+}
 
 #home b {
   font-size: 42px;
@@ -188,15 +197,20 @@ ul {
   color: white;
 }
 .h-primary {
+  color: #033864;
   font-size: 3.8rem;
-  margin-top: 273px;
+  margin-top: 103px;
   margin-bottom: -6px;
   font-family: "Nunito", sans-serif;
   letter-spacing: 2px;
   transform: translateY(50px);
-  animation: slideIn 1s ease forwards;
+  animation: slideIn 2s ease forwards;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
   /* background-color: white; */
+  padding: 22px;
+  border-radius: 30px;
+  /* box-shadow: 10px 10px 9px rgb(10, 26, 78); */
 }
 @keyframes slideIn {
   0% {
@@ -218,6 +232,7 @@ ul {
   margin-bottom: 100px;
   margin-left: 100px;
   margin-right: 100px;
+  z-index: -1;
 }
 
 .content {
@@ -236,6 +251,7 @@ ul {
   font-family: fantasy;
   transform: translateX(-100%);
   animation: slideInLeft 1s forwards;
+  z-index: -1;
 }
 
 .content h3 {
@@ -245,7 +261,7 @@ ul {
   text-align: left;
   text-align: center;
   font-family: fantasy;
-
+  z-index: -1;
   transform: translateX(100%);
   animation: slideInRight 1s forwards;
 }
@@ -256,12 +272,16 @@ ul {
   color: #080808;
   font-size: 24px;
   letter-spacing: 1px;
+  /* z-index: -1; */
   transform: translateX(-100%);
   animation: slideInLeft 1s forwards;
 }
 #mission{
   transform: translateX(100%);
   animation: slideInRight 1s forwards;
+}
+.img , .img1{
+  z-index: -1;
 }
 .img img {
   margin-left: 50px;
@@ -271,6 +291,7 @@ ul {
   transition: transform 0.5s ease-in-out;
   transform: translateX(100%);
   animation: slideInRight 1s forwards;
+  /* z-index: -1; */
 }
 
 .img1 img {
@@ -280,7 +301,7 @@ ul {
   transition: transform 0.5s;
   transform: translateX(-100%);
   animation: slideInLeft 1s forwards;
-  /* z-index: 1; */
+  /* z-index:; */
 }
 
 @keyframes slideInLeft {
@@ -337,7 +358,7 @@ ul {
   font-size: 2.2rem;
   padding: 12px;
   font-family: "Nunito", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .services-container {
@@ -348,18 +369,18 @@ ul {
 
 .h-primary1 {
   font-size: 61px;
-  font-family: "Nunito", sans-serif;
+  font-family: fantasy;
   letter-spacing: 2px;
-  color: #1b2272;
+  color: #033864;
   text-transform: uppercase;
 }
 
-.h-primary2 {
+.h-secondary{
   font-size: 61px;
   margin-top: 27px;
   /* margin-bottom: -6px; */
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 2px;
+  /* font-family:fantasy; */
+  /* letter-spacing: 2px; */
   color: #1b2272;
   text-transform: uppercase;
 }
@@ -399,8 +420,10 @@ ul {
 
 .heading h4 {
   font-size: 4rem;
-  color: #1b2272;
+  /* color: #1b2272; */
+  color: #033864;
   padding: 1rem;
+  font-family: fantasy;
 }
 
 .heading p {
@@ -656,6 +679,8 @@ textarea {
 .layout h2 {
   font-size: 4rem;
   margin-bottom: 4%;
+  font-family: fantasy;
+  color: #033864;
 }
 
 .accordion {
