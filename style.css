@@ -69,7 +69,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.2;
+  /* opacity: 0.1; */
 }
 ul {
   margin-top: -7px;
@@ -139,7 +139,7 @@ ul {
   left: 0px;
   width: 100%;
   z-index: -1;
-  opacity: 0.8;
+  /* opacity: 0.5; */
 }
 
 #home h1 {
@@ -156,6 +156,8 @@ ul {
   
   font-weight: 400;
   letter-spacing: 1.5px;
+  transform: translateY(50px);
+  animation: slideIn 1s ease forwards;
 }
 
 
@@ -191,8 +193,21 @@ ul {
   margin-bottom: -6px;
   font-family: "Nunito", sans-serif;
   letter-spacing: 2px;
-}
+  transform: translateY(50px);
+  animation: slideIn 1s ease forwards;
 
+  /* background-color: white; */
+}
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 /* About section */
 .tool .main {
   display: flex;
@@ -235,6 +250,7 @@ ul {
   animation: slideInRight 1s forwards;
 }
 
+
 .content p {
   font-weight: 200;
   color: #080808;
@@ -243,7 +259,10 @@ ul {
   transform: translateX(-100%);
   animation: slideInLeft 1s forwards;
 }
-
+#mission{
+  transform: translateX(100%);
+  animation: slideInRight 1s forwards;
+}
 .img img {
   margin-left: 50px;
   width: 450px;
@@ -261,14 +280,7 @@ ul {
   transition: transform 0.5s;
   transform: translateX(-100%);
   animation: slideInLeft 1s forwards;
-}
-
-.img1 img:hover {
-  -ms-transform: scale(1.1);
-  /* IE 9 */
-  -webkit-transform: scale(1.1);
-  /* Safari 3-8 */
-  transform: scale(1.1);
+  /* z-index: 1; */
 }
 
 @keyframes slideInLeft {
@@ -284,6 +296,13 @@ ul {
     transform: translateX(0);
   }
 }
+.img img:hover , .img1 img:hover {
+  
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
 
 
 
@@ -347,6 +366,7 @@ ul {
 
 .center {
   text-align: center;
+  
 }
 
 .btn1 {
