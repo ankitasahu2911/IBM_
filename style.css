@@ -254,14 +254,6 @@ ul {
   animation: slideInRight 1s forwards;
 }
 
-.img img:hover {
-  -ms-transform: scale(1.1);
-  /* IE 9 */
-  -webkit-transform: scale(1.1);
-  /* Safari 3-8 */
-  transform: scale(1.1);
-}
-
 .img1 img {
   margin-right: 80px;
   width: 500px;
