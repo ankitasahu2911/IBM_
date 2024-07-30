@@ -11,12 +11,12 @@ body {
 }
 .chatbot-toggler {
   position: fixed;
-  bottom: 30px;
-  right: 630px;
+  bottom: 20px;
+  right: 35%;
   outline: none;
   border: rgb(23, 87, 184);
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   display: flex;
   cursor: pointer;
   align-items: center;
@@ -41,8 +41,9 @@ body.show-chatbot .chatbot-toggler span:last-child {
 }
 .chatbot {
   position: fixed;
-  right: 630px;
-  bottom: 105px;
+  right: 35%;
+  bottom: 80px;
+  height: 85%;
   width: 420px;
   background: #fff;
   border: #142962;
@@ -138,7 +139,7 @@ header h2 {
 }
 .chatbot .chat-input {
   display: flex;
-  gap: 5px;
+  gap: 4px;
   position: absolute;
   bottom: 0;
   width: 100%;
