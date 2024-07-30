@@ -8,5 +8,3 @@ answers.forEach((event) => {
     }
   });
 });
-
-
