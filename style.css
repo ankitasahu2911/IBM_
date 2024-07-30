@@ -62,7 +62,7 @@ body {
 
 #navbar::before {
   content: "";
-  background-color: rgba(253, 255, 253, 0.93);
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -128,6 +128,7 @@ ul {
   height: 500px;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 }
 
 #home::before {
@@ -273,7 +274,7 @@ ul {
   color: #080808;
   font-size: 24px;
   letter-spacing: 1px;
-  /* z-index: -1; */
+  z-index: -1;
   transform: translateX(-100%);
   animation: slideInLeft 1s forwards;
 
