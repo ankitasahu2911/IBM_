@@ -16,6 +16,9 @@ html {
 body {
   background: rgb(217, 211, 211);
   width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
 }
 
 /* NAVIGATION BAR */
@@ -196,20 +199,32 @@ ul {
 #home {
   display: flex;
   flex-direction: column;
-  padding: 89px 200px;
+  width: 100%;
+  padding: 89px 15px 0px 0px;
   height: 500px;
   justify-content: center;
+
   align-items: center;
   z-index: -1;
 }
 
 #home::before {
   content: "";
-  position: absolute;
+
   background: url(frontpage.jpg) no-repeat center center/cover;
+
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+
+
+  width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
+  right: 0px;
+
   width: 100%;
   z-index: -1;
   opacity: 0.6;
@@ -527,12 +542,14 @@ ul {
   }
 
   .services-container {
-    padding: 0.5rem;
+    padding-left: 0px;
   }
 
   .box {
     width: 90%;
     margin: 10px;
+    padding-right: 5px;
+    padding-left: 0px;
   }
 }
 
@@ -663,7 +680,7 @@ ul {
 }
 
 .feature-card .card {
-  padding: 30px 30px;
+  padding: 30px 45px;
   text-align: center;
   border: 1px solid #686565;
   width: 230px;
@@ -1059,7 +1076,12 @@ textarea {
 
 footer {
   margin: 5px;
+
+
+
 }
+
+
 
 .foot-panel1 {
   color: #033864;
@@ -1067,7 +1089,7 @@ footer {
   margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: fantasy;
   font-weight: 600;
 }
@@ -1087,6 +1109,8 @@ footer {
 ul {
   margin-top: -7px;
 }
+
+
 
 ul a {
   display: flex;
@@ -1129,7 +1153,7 @@ ul p:hover {
   width: 100%;
   height: 40px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -1138,7 +1162,7 @@ ul p:hover {
   width: 100%;
   height: 40px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 10px;
   background-color: #4caf50;
   color: #fff;
   border: none;
@@ -1169,6 +1193,74 @@ ul p:hover {
   font-weight: 300;
   width: 100vw;
   margin: auto;
+}
+
+/* Add this to your existing CSS file */
+
+/* Desktop styles */
+
+
+/* Tablet styles */
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .foot-panel2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .foot-panel2 ul {
+    width: 100%;
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .flex-column-form {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .media-centered {
+    max-width: 300px;
+  }
+}
+
+/* Additional styles to improve responsiveness */
+.foot-panel2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foot-panel2 ul li {
+  margin-bottom: 10px;
+}
+
+.flex-column-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-centered input[type="name"],
+.media-centered input[type="number"],
+.media-centered input[type="email"] {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.media-centered button[type="submit"] {
+  padding: 10px;
+  font-size: 14px;
 }
 
 .pages {
