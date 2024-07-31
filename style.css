@@ -1100,7 +1100,7 @@ footer {
   padding: 3%;
   display: flex;
   justify-content: space-evenly;
-  font-family: "Nunito", sans-serif;
+  font-family:"Nunito", sans-serif;
   font-weight: 500;
   width: 100vw;
   margin: 0 auto;
@@ -1114,8 +1114,9 @@ ul {
 
 ul a {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 10px;
+  padding-top: 1rem;
   color: #dddddd;
   justify-content: center;
   align-items: center;
@@ -1127,8 +1128,8 @@ ul a:hover {
 }
 
 ul p {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 ul p:hover {
@@ -1175,8 +1176,9 @@ ul p:hover {
 }
 
 .flex-column-form h3 {
-  font-size: 2rem;
-  letter-spacing: 2px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: normal;
   font-family: "Nunito", sans-serif;
 }
 
