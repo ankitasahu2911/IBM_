@@ -1092,6 +1092,7 @@ ul a {
   display: flex;
   font-size: 1.3rem;
   margin-top: 10px;
+  padding-top: 0.7rem;
   color: #dddddd;
   justify-content: center;
   align-items: center;
@@ -1104,7 +1105,7 @@ ul a:hover {
 
 ul p {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 ul p:hover {
@@ -1152,6 +1153,7 @@ ul p:hover {
 
 .flex-column-form h3 {
   font-size: 1.6rem;
+  font-weight: 600;
   letter-spacing: normal;
   font-family: "Nunito", sans-serif;
 }
