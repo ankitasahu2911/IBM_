@@ -1100,7 +1100,7 @@ footer {
   padding: 3%;
   display: flex;
   justify-content: space-evenly;
-  font-family:"Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
   width: 100vw;
   margin: 0 auto;
@@ -1137,8 +1137,9 @@ ul p:hover {
   color: #7094af;
 }
 
+
 .media-centered {
-  max-width: 500px;
+  max-width: 800px;
   margin: 40px auto;
   padding: 10px;
   gap: 1rem;
@@ -1152,7 +1153,7 @@ ul p:hover {
 .media-centered input[type="number"],
 .media-centered input[type="email"] {
   width: 100%;
-  height: 40px;
+  height: 30px;
   padding: 10px;
   font-size: 10px;
   border: 1px solid #ccc;
@@ -1163,7 +1164,7 @@ ul p:hover {
   width: 100%;
   height: 40px;
   padding: 10px;
-  font-size: 10px;
+  font-size: 14px;
   background-color: #4caf50;
   color: #fff;
   border: none;
@@ -1203,21 +1204,57 @@ ul p:hover {
 
 
 /* Tablet styles */
+@media (max-width: 768px) {
+  .foot-panel2 {
+    flex-direction: column;
+    padding: 2%;
+  }
+
+  .foot-panel2 ul {
+    margin-bottom: 20px;
+  }
+
+  .media-centered {
+    max-width: 400px;
+  }
+
+  .flex-column-form h3 {
+    font-size: 1.4rem;
+  }
+}
 
 
 /* Mobile styles */
 @media (max-width: 767px) {
+  .heads {
+    padding-top: 60px;
+    padding-left: 60px;
+    font-size: 4.5rem;
+  }
+
   .foot-panel2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 5px;
 
   }
 
   .foot-panel2 ul {
+    gap: 1;
     width: 100%;
-    margin: 10px;
-    font-size: 12px;
+    margin: 8px;
+    font-size: 3px;
+  }
+
+  .foot-panel2 ul a {
+    margin: 0px;
+    font-size: 17px;
+  }
+
+  .foot-panel2 ul p {
+    font-size: 20px;
+
   }
 
   .flex-column-form {
@@ -1231,39 +1268,7 @@ ul p:hover {
 }
 
 /* Additional styles to improve responsiveness */
-.foot-panel2 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-.foot-panel2 ul li {
-  margin-bottom: 10px;
-}
-
-.flex-column-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.media-centered {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.media-centered input[type="name"],
-.media-centered input[type="number"],
-.media-centered input[type="email"] {
-  padding: 10px;
-  font-size: 14px;
-}
-
-.media-centered button[type="submit"] {
-  padding: 10px;
-  font-size: 14px;
-}
 
 .pages {
   font-size: 1.3rem;
@@ -1275,6 +1280,56 @@ ul p:hover {
   font-size: 1rem;
   text-align: center;
   margin-top: 2px;
+}
+
+/* Add this to your existing CSS code */
+
+/* For desktop screens */
+@media (min-width: 1024px) {
+  .foot-panel4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pages {
+    margin-right: 20px;
+  }
+
+  .copyright {
+    margin-left: 20px;
+  }
+}
+
+/* For medium-sized screens (tablets) */
+@media (max-width: 768px) {
+  .foot-panel4 {
+    display: block;
+  }
+
+  .pages {
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    margin-top: 0;
+  }
+}
+
+/* For small-sized screens (mobile phones) */
+@media (max-width: 480px) {
+
+
+  .pages {
+    font-size: 1.1rem;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+    padding-bottom: 55px;
+
+  }
 }
 
 /* chatbot btn */
