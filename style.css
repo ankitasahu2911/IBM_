@@ -132,6 +132,7 @@ ul {
 @media (min-width: 1200px) {
   #navbar {
     height: 90px;
+    /* width:81%; */
   }
 
   #logo {
@@ -143,7 +144,7 @@ ul {
   }
 
   #navbar ul li {
-    margin: 0px 20px;
+    margin: 0px 7px;
   }
 
   #navbar ul li a {
@@ -152,9 +153,11 @@ ul {
   }
 
   .topnav-right {
-    /* margin-left: 25%; */
+    margin-left: 25%;
   }
-
+  #navbar .topnav-right a{
+    padding: 3px 9px;
+  }
   .topnav-right a {
     font-size: 1.5rem;
     padding: 10px 25px;
@@ -165,6 +168,7 @@ ul {
 @media (min-width: 768px) and (max-width: 1199px) {
   #navbar {
     height: 70px;
+    width: 89%;
   }
 
   #logo {
@@ -175,8 +179,13 @@ ul {
     margin-top: -5px;
   }
 
-  #navbar ul li {
+  /* #navbar ul li {
     margin: 0px 15px;
+  } */
+
+  #navbar ul li a {
+    font-size: 1.5rem;
+    padding: 7px 10px;
   }
 
   #navbar ul li a {
@@ -185,12 +194,15 @@ ul {
   }
 
   .topnav-right {
-    margin-left: 20%;
+    /* margin-left: 20%; */
+  }
+  #navbar .topnav-right a{
+    /* padding: 3px 9px; */
   }
 
   .topnav-right a {
     font-size: 1.3rem;
-    padding: 8px 18px;
+    padding: 3px 9px;
   }
 }
 
