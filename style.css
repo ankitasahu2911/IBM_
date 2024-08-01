@@ -501,6 +501,14 @@ ul {
 
 /* Mobile */
 @media (max-width: 767px) {
+  .h-primary h1 b {
+    font-size: 25px;
+  }
+
+  .para {
+    font-size: 25px;
+  }
+
   #home {
     padding: 89px 20px;
   }
@@ -551,6 +559,24 @@ ul {
     padding-right: 5px;
     padding-left: 0px;
   }
+}
+
+@media (max-width: 467px) {
+  .h-primary {
+    padding-top: 45px;
+
+
+
+  }
+
+  .h-primary b {
+
+    font-weight: 200;
+
+    font-size: small;
+
+  }
+
 }
 
 
