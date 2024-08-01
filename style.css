@@ -30,7 +30,7 @@ body {
 #navbar .topnav-right {
   display: flex;
   align-items: center;
-  margin-left: 18%;
+  margin-left: 0%;
 }
 
 #navbar .topnav-right a {
@@ -152,7 +152,7 @@ ul {
   }
 
   .topnav-right {
-    margin-left: 25%;
+    /* margin-left: 25%; */
   }
 
   .topnav-right a {
