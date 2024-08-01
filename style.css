@@ -132,7 +132,7 @@ ul {
 @media (min-width: 1200px) {
   #navbar {
     height: 90px;
-    /* width:81%; */
+    /* width:100%; */
   }
 
   #logo {
