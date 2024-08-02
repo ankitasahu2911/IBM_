@@ -193,13 +193,6 @@ ul {
     padding: 8px 15px;
   }
 
-  .topnav-right {
-    /* margin-left: 20%; */
-  }
-  #navbar .topnav-right a{
-    /* padding: 3px 9px; */
-  }
-
   .topnav-right a {
     font-size: 1.3rem;
     padding: 3px 9px;
@@ -1131,6 +1124,62 @@ textarea {
 
 .accordion.active .accordion__answer {
   display: block;
+}
+/* Tablet devices (768px and above) */
+@media (min-width: 768px) {
+  .accordion {
+    width: 60vw;
+  }
+}
+
+/* Mobile devices (480px and above) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .accordion {
+    width: 80vw;
+  }
+  .accordion__question p {
+    font-size: 16px;
+  }
+  .accordion__answer p {
+    font-size: 14px;
+  }
+}
+
+/* Small mobile devices (below 480px) */
+@media (max-width: 479px) {
+  .accordion {
+    width: 90vw;
+  }
+  .accordion__question p {
+    font-size: 14px;
+  }
+  .accordion__answer p {
+    font-size: 12px;
+  }
+  /* Desktop screen styles */
+  @media (min-width: 768px) {
+    .accordion {
+      width: 50vw;
+      margin: 20px auto;
+    }
+    
+    .accordion__question {
+      padding: 30px;
+    }
+    
+    .accordion__answer {
+      padding: 30px;
+    }
+    
+    .accordion__question p {
+      font-size: 20px;
+    }
+    
+    .accordion__answer p {
+      font-size: 18px;
+    }
+  }
+  
 }
 
 footer {
